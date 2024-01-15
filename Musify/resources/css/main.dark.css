@@ -1,0 +1,40 @@
+.darkmode{
+      background-color: #a07d81;
+
+
+}
+.darkmode .page-links {
+      background-color: #7f5559;
+
+}
+.darkmode .page-links li a {
+    background: #C2A7A1;
+    color: #654a4e;
+}
+.darkmode .page-links a:hover {
+  background: #4a0404;
+  color: #e0b1b6;
+}
+
+.darkmode .main-content {
+    background: #e0b1b6;
+}
+.darkmode .form {
+    background: #e0b1b6;
+}
+.darkmode .review {
+    background: #e0b1b6;
+}
+.darkmode h2 em {
+  color: #e6ddde;
+}
+/* for toggle button */
+.darkmode #darkmode{ 
+    background: #C2A7A1;
+    color: #654a4e;
+}
+.darkmode #darkmode:hover {
+  background: #4a0404;
+  color: #e0b1b6;
+}
+

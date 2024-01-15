@@ -1,0 +1,51 @@
+include ../templates/navbar
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    title Musify
+    |     
+    link(href='css/main.css', rel='stylesheet')
+    |     
+    link(href='css/main.dark.css', rel='stylesheet')
+    |     
+    script(src='js/main.js')
+  |   
+  body.mode
+    +navBar
+    |       
+    .main-banner(style='display: none;')
+      #music-icon  
+      |         
+      #banner-content  
+    |       
+    h1.logo Musify
+    |       
+    h2
+      | Bringing 
+      strong  you 
+      |  
+      em customized playlists
+    |       
+    img(src='/images/sing.jpg', alt='Musify image')
+    |       
+    .main-content
+      p
+        | Based on your favorite artists and genres, Musify can create customized
+        | playlists for you. Pick your favorite artits and genre and enjoy the
+        | rest.
+      |         
+      p
+        | You can save your playlists to look back at them later. We can also give
+        | you new suggestions.
+      |         
+      ol
+        li Personilized Playlists
+        |           
+        li Recommendations for your music taste
+        |           
+        li Discover new Artists
+        |           
+        li Build a community

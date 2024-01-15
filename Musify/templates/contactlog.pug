@@ -1,0 +1,69 @@
+include ../templates/navbar
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    title contact log
+    |     
+    link(href='css/main.css', rel='stylesheet')
+    |     
+    link(href='css/main.dark.css', rel='stylesheet')
+    |     
+    script(src='js/main.js')
+    |     
+    script(src='js/table.js')
+  |     
+  body.mode
+    +navBar
+    |   
+    #banner
+      h2  Your Song of Choice 
+      |         
+      div
+        label(for='banner_input')  Song you&apos;re currently listening to 
+        |           
+        input#banner_input(type='text', name='banner_input')
+      |         
+      div
+        span
+          button#setSong  Set Song
+        |             
+        span
+          button#deleteSong  Delete Song
+    |     
+    #banner-status(style='display: none;')
+    |     
+    h1  Contact Log 
+    |     
+    table#table
+      tbody
+        tr
+          th  Name 
+          |     
+          th  Email 
+          |     
+          th  Date 
+          |     
+          th  Time until Date 
+          |     
+          th  Subscription 
+          |     
+          th  Intrested in giving us a review 
+          |     
+          th  Delete Row 
+        
+        each data in contacts 
+            tr
+             td= data.clientName 
+             td
+                a(href=`mailto:${data.email}`, id='mailto') #{data.email} 
+             td= data.subsDate 
+             td= ""
+             td= data.subscribtion 
+             td= data.checkbox 
+             td.next_id(style='display: none;') #{data.id} 
+             td 
+                 button(id="delete" type="button") Delete Row
+

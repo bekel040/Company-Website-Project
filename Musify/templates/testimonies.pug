@@ -1,0 +1,52 @@
+include ../templates/navbar
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    title Testimonies
+    |     
+    link(href='css/main.css', rel='stylesheet')
+    |     
+    link(href='css/main.dark.css', rel='stylesheet')
+    |     
+    script(src='js/main.js')
+  |   
+  body.mode
+    +navBar 
+    |     
+    h1 Customer Reviews
+    |     
+    iframe(width='560', height='315', src='https://www.youtube.com/embed/lTRiuFIWV54?si=4kwy6Ty8lFpCz2Y5', title='YouTube video player', style='border: none', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', allowfullscreen='')
+    |     
+    .review-container
+      .review
+        p.review-body
+          | The website was very easy to use and I&apos;ve got new recommendations that
+          | I&apos;m enjoying it.
+        |         
+        p.reviewer-name Sally Bonsom
+      |       
+      .review
+        p.review-body Very good and satisfying experience
+        |         
+        p.reviewer-name Bill
+      |       
+      .review
+        p.review-body
+          | Would definitely recommend it to anyone interested in finding new
+          | artists to listen to and grow your music taste
+        |         
+        p.reviewer-name stur033
+      |       
+      .review
+        p.review-body
+          | Loved the experience, and would definitely recommend
+        |         
+        p.reviewer-name Derrick Huus
+      |       
+      .review
+        p.review-body Very Aesthetic!!
+        |         
+        p.reviewer-name numg123

@@ -1,0 +1,60 @@
+include ../templates/navbar
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    title Contact Us
+    |     
+    link(href='css/main.css', rel='stylesheet')
+    |     
+    link(href='css/main.dark.css', rel='stylesheet')
+    |     
+    script(src='js/main.js')
+    |     
+    script(src='js/contact.js')
+  |   
+  body.mode
+    +navBar
+    |     
+    h1 Sign up for our subscription
+    |     
+    form(action='/contact', method='post')
+      .form
+        div
+          label(for='name') Enter your name:
+          |           
+          input#name(type='text', name='name', required='')
+        |         
+        div
+          label(for='email-field') Enter your email:
+          |           
+          input#email-field(type='email', name='email', required='')
+        |         
+        div
+          label(for='start-date') Subscription start date:
+          |           
+          input#start-date(type='date', name='date')
+        |         
+        div
+          label(for='choices') Choose a subscription plan:
+          |           
+          select#choices(name='choices')
+            option(value='monthly-subscription') monthly subscription
+            |             
+            option(value='one-time-payment') one-time-payment
+            |             
+            option(value='discounted-trial') discounted trial
+        |         
+        div
+          label(for='checkbox')  Intrested in giving us a review
+          |           
+          input#checkbox(type='checkbox', name='checkbox')
+        |         
+        div
+          label(for='submit')
+          |           
+          input#submit(type='submit', name='submit')
+        |         
+        #placeholder
